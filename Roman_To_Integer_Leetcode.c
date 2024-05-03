@@ -3,11 +3,9 @@ int romanToInt(char* s) {
     for(i=0;s[i];i++){
         if(s[i]=='I'){
             num=num+1;
-            printf("UM:%d\n",num);
             
           if(s[i]=='I'&&(s[i+1]=='V'||s[i+1]=='X')){
            num=num-2;
-           printf("DOIS:%d\n",num);
           }
         }
         if(s[i]=='V'){
